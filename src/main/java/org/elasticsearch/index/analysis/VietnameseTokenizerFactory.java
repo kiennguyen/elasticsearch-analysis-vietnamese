@@ -29,7 +29,7 @@ public class VietnameseTokenizerFactory extends AbstractTokenizerFactory {
     private final boolean ambiguitiesResolved;
 
     public VietnameseTokenizerFactory(IndexSettings indexSettings, Environment environment, String name, Settings settings) {
-        super(indexSettings, name, settings);
+        super(indexSettings, settings);
         sentenceDetectorEnabled = settings.getAsBoolean("sentence_detector", Boolean.FALSE);
         ambiguitiesResolved = settings.getAsBoolean("ambiguities_resolved", Boolean.FALSE);
     }
